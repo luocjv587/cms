@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Tag;
 use App\Visitor;
 use Illuminate\Http\Request;
 
@@ -18,8 +19,9 @@ class ArticleController extends Controller
         $articles = Article::checkAuth()
             ->orderBy(config('blog.article.sortColumn'), config('blog.article.sort'))
             ->paginate(config('blog.article.number'));
+        $tags = Tag::all();
 
-        return view('article.index', compact('articles'));
+        return view('article.index', compact('articles','tags'));
     }
 
     /**
