@@ -38,11 +38,6 @@ class updateFormal extends Command
     public function handle()
     {
         $target = '/usr/share/nginx/html/cms'; // 生产环境 web 目录
-$cmd = "cd $target && git pull";
-//            $res = shell_exec($cmd);
-            $res = json_encode($this->doShell($cmd));
-	echo $res;
-	dd();
 //密钥
         $secret = 'luocj';
 //获取 GitHub 发送的内容
