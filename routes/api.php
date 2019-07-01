@@ -96,5 +96,5 @@ Route::group([
     'namespace' => 'Api',
 ], function () {
     //更新线上环境代码
-    Route::get('update_formal', 'OpenApiController@updateFormal');
+    Route::post('update_formal', 'OpenApiController@updateFormal');
 });
