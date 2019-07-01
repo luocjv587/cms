@@ -2,7 +2,11 @@
 
 namespace App\Console;
 
+use App\Console\Commands\getDouban;
+use App\Console\Commands\getToutiao;
+use App\Console\Commands\getWangyi;
 use App\Console\Commands\getZhihuDailyReport;
+use App\Console\Commands\updateFormal;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -17,6 +21,10 @@ class Kernel extends ConsoleKernel
         Commands\BlogInstall::class,
         Commands\CreateAdmin::class,
         getZhihuDailyReport::class,
+        getDouban::class,
+        getToutiao::class,
+        getWangyi::class,
+        updateFormal::class,
     ];
 
     /**

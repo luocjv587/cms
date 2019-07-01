@@ -92,3 +92,9 @@ Route::group([
     Route::post('comments/vote/{type}', 'MeController@postVoteComment')->middleware('auth:api');
     Route::get('tags', 'TagController@getList');
 });
+Route::group([
+    'namespace' => 'Api',
+], function () {
+    //更新线上环境代码
+    Route::get('update_formal', 'OpenApiController@updateFormal');
+});

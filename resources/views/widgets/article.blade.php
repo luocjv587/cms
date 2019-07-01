@@ -55,7 +55,6 @@
                                 <div class="label"><i class="fas fa-tag"></i>{{ $tag->tag }}</div>
                             </a>
                         </div>
-
                     @endforeach
                 </div>
             </li>
