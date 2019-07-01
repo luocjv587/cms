@@ -39,13 +39,16 @@ class updateFormal extends Command
     {
         $target = '/usr/share/nginx/html/blog'; // 生产环境 web 目录
 //密钥
-        $secret = "AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==";
+        $secret = 'luocj';
 //获取 GitHub 发送的内容
-        $json = file_get_contents('php://input');
-        $content = json_decode($json, true);
+//        $json = file_get_contents('php://input');
+//        $content = json_decode($json, true);
+        $json = json_encode(request()->all());
+        $content = request()->all();
 //github 发送过来的签名
         $signature = isset($_SERVER['HTTP_X_HUB_SIGNATURE']) ? $_SERVER['HTTP_X_HUB_SIGNATURE'] : '';
         if (!$signature) {
+            echo 'no signature';
             return http_response_code(404);
         }
         list($algo, $hash) = explode('=', $signature, 2);
