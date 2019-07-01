@@ -53,7 +53,7 @@ class updateFormal extends Command
         $hash = "sha1=" . hash_hmac('sha1', file_get_contents("php://input"), $secret);
 // 判断签名是否匹配
         if (strcmp($signature, $hash) == 0) {
-            $cmd = "cd $target && sudo git pull";
+            $cmd = "cd $target && git pull";
 //            $res = shell_exec($cmd);
             $res = json_encode($this->doShell($cmd));
             $res_log = 'Success:' . PHP_EOL;
