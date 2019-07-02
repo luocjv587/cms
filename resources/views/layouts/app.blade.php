@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="{{ config('blog.meta.keywords') }}">
     <meta name="description" content="{{ config('blog.meta.description') }}">
+    <meta name="referrer" content="no-referrer" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
