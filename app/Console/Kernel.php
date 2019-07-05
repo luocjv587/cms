@@ -40,6 +40,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
         $schedule->command('get:zhi_hu_daily_report')->daily();
+
         $schedule->command('get:huxiu')->daily();
     }
 
