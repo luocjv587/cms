@@ -3,6 +3,7 @@
 namespace App\Console;
 
 use App\Console\Commands\getDouban;
+use App\Console\Commands\getHuxiu;
 use App\Console\Commands\getToutiao;
 use App\Console\Commands\getWangyi;
 use App\Console\Commands\getZhihuDailyReport;
@@ -25,6 +26,7 @@ class Kernel extends ConsoleKernel
         getToutiao::class,
         getWangyi::class,
         updateFormal::class,
+        getHuxiu::class,
     ];
 
     /**
@@ -38,6 +40,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
         $schedule->command('get:zhi_hu_daily_report')->daily();
+        $schedule->command('get:huxiu')->daily();
     }
 
     /**
