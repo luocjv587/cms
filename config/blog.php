@@ -40,9 +40,7 @@ return [
     // Article Page
     'article' => [
         'title'       => '生活有度，人生添寿。',
-        'description' => '😄😄😄😄😄😄😄😄😄
-        😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
-        😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄',
+        'description' => '欢迎~',
         'number'      => 15,
         'sort'        => 'desc',
         'sortColumn'  => 'published_at',
@@ -65,7 +63,8 @@ return [
             'open' => false,
             'url'  => 'https://twitter.com/pigjian'
         ],
-        'meta' => '© Luo Blog 2019. Powered By Luo',
+       // 'meta' => '© Luo Blog 2019. Powered By Luo',
+        'meta' => '<a href="http://beian.miit.gov.cn">备案号:沪ICP备17004502-1</a>',
     ],
 
     'license' => 'Powered By Luo .<br/>This article is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
