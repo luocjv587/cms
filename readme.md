@@ -1,18 +1,7 @@
-<p align="center">
-<a href="https://pigjian.com/">
-<img src="https://pigjian.com/uploads/Logo.png" alt="Powered By Jiajian Chan" width="160">
-</a>
-</p>
+# 基于PJ Blog 的信息聚合网站
 
-<p align="center">🎈 PJ Blog is an open source blog built with Laravel and Vue.js. <a href="https://pigjian.com">https://pigjian.com</a></p>
+1.目前每日自动爬知乎日报
 
-<p align="center">
-  <b>Special thanks to the generous sponsorship by:</b>
-  <br><br>
-  <a href="https://www.upyun.com">
-    <img src="https://pigjian.com/storage/logo/upyun.png" width=300>
-  </a>
-</p>
 
 # PJ Blog
 
@@ -26,36 +15,6 @@ Here is [documents](https://manual.pigjian.com/)
 
 [Example](http://example.pigjian.com)
 
-## Basic Features
-
-- Manage users, articles, discussions and media
-- Statistical tables
-- Categorize articles
-- Label classification
-- Content moderation
-- Own comments system
-- Multi-language switching
-- Markdown Editor
-- Roles & Permissions
-- and more...
-
-[PJ Blog](https://github.com/jcc/blog) Laravel 5.*
-
-## Server Requirements
-
-- PHP >= 7.1.0
-- Node >= 6.x
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Mbstring PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
-
-## Preview
-
-![New Blog](https://pig-storage.b0.upaiyun.com/cover/2018/09/07/d2T4cAjTagf5L1rXH1FjLsFkJVffsPIGPkHEl2A5.jpg)
-
-![New Blog](https://pig-storage.b0.upaiyun.com/cover/2018/09/07/4b7ExtB6NHZVh8n5KnW2673Ej6gwtLm1SUAubtpa.jpg)
 
 ## Install
 
