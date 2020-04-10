@@ -1,6 +1,10 @@
 # 基于PJ Blog 的信息聚合网站
 
+功能新增
+
 1.目前每日自动爬知乎日报
+
+地址:http://blog.luochenjie.com/
 
 
 # PJ Blog
